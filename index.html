@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My HTML Snippet Library - Documentation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background:#fafafa; }
+    h1 { color:#333; }
+    .snippet-box {border:1px solid #ccc; padding:20px; margin:20px 0; border-radius:8px; background:#fff;}
+    pre {background:#f4f4f4; padding:10px; overflow-x:auto; border-radius:4px;}
+    button.copy {margin-top:10px; padding:6px 12px; cursor:pointer; background:#007BFF; color:white; border:none; border-radius:4px;}
+    button.copy:hover {background:#0056b3;}
+    iframe {width:100%; height:150px; border:none; margin-bottom:10px; background:white;}
+  </style>
+</head>
+<body>
+  <h1>📚 My HTML Snippet Library - Documentation</h1>
+  <p>Click <b>Copy Code</b> to copy snippet HTML.</p>
+
+    <div class="snippet-box">
+      <h2>Alert</h2>
+      <iframe src="snippets/alert.html"></iframe>
+      <pre>&lt;!-- Example snippet: Alert Box --&gt;
+&lt;div style=&quot;padding:10px; background:#ffdddd; border-left:6px solid #f44336; margin-bottom:15px;&quot;&gt;
+  &lt;strong&gt;Danger!&lt;/strong&gt; This is an alert box.
+&lt;/div&gt;
+</pre>
+      <button class="copy" onclick="copyCode(this)">Copy Code</button>
+    </div>
+    
+    <div class="snippet-box">
+      <h2>Form</h2>
+      <iframe src="snippets/form.html"></iframe>
+      <pre>&lt;!-- Example snippet: Simple Form --&gt;
+&lt;form style=&quot;max-width:300px; padding:10px; border:1px solid #ccc; border-radius:6px;&quot;&gt;
+  &lt;label&gt;Name:&lt;/label&gt;&lt;br&gt;
+  &lt;input type=&quot;text&quot; style=&quot;width:100%; padding:6px; margin-bottom:10px;&quot;&gt;&lt;br&gt;
+  &lt;label&gt;Email:&lt;/label&gt;&lt;br&gt;
+  &lt;input type=&quot;email&quot; style=&quot;width:100%; padding:6px; margin-bottom:10px;&quot;&gt;&lt;br&gt;
+  &lt;button type=&quot;submit&quot; style=&quot;padding:8px 15px; background:#007BFF; color:white; border:none; border-radius:4px;&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+      <button class="copy" onclick="copyCode(this)">Copy Code</button>
+    </div>
+    
+    <div class="snippet-box">
+      <h2>Login</h2>
+      <iframe src="snippets/login.html"></iframe>
+      <pre>&lt;!-- Example snippet: Login Form --&gt;
+&lt;div style=&quot;max-width:300px; margin:auto; border:1px solid #ddd; padding:20px; border-radius:6px;&quot;&gt;
+  &lt;h3&gt;Login&lt;/h3&gt;
+  &lt;input type=&quot;text&quot; placeholder=&quot;Username&quot; style=&quot;width:100%; padding:8px; margin:8px 0;&quot;&gt;&lt;br&gt;
+  &lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; style=&quot;width:100%; padding:8px; margin:8px 0;&quot;&gt;&lt;br&gt;
+  &lt;button style=&quot;width:100%; padding:10px; background:#28a745; color:white; border:none; border-radius:4px;&quot;&gt;Login&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+      <button class="copy" onclick="copyCode(this)">Copy Code</button>
+    </div>
+    
+    <div class="snippet-box">
+      <h2>Modal</h2>
+      <iframe src="snippets/modal.html"></iframe>
+      <pre>&lt;!-- Example snippet: Simple Modal --&gt;
+&lt;div id=&quot;myModal&quot; style=&quot;display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);&quot;&gt;
+  &lt;div style=&quot;background:#fff; margin:10% auto; padding:20px; width:300px; border-radius:8px;&quot;&gt;
+    &lt;h3&gt;Modal Title&lt;/h3&gt;
+    &lt;p&gt;This is a simple modal window.&lt;/p&gt;
+    &lt;button onclick=&quot;document.getElementById(&#x27;myModal&#x27;).style.display=&#x27;none&#x27;&quot;&gt;Close&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;button onclick=&quot;document.getElementById(&#x27;myModal&#x27;).style.display=&#x27;block&#x27;&quot;&gt;Open Modal&lt;/button&gt;
+</pre>
+      <button class="copy" onclick="copyCode(this)">Copy Code</button>
+    </div>
+    
+    <div class="snippet-box">
+      <h2>Navbar</h2>
+      <iframe src="snippets/navbar.html"></iframe>
+      <pre>&lt;!-- Example snippet: Navbar --&gt;
+&lt;nav style=&quot;background:#333; color:white; padding:10px;&quot;&gt;
+  &lt;a href=&quot;#&quot; style=&quot;color:white; margin-right:15px;&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;#&quot; style=&quot;color:white; margin-right:15px;&quot;&gt;About&lt;/a&gt;
+  &lt;a href=&quot;#&quot; style=&quot;color:white;&quot;&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+</pre>
+      <button class="copy" onclick="copyCode(this)">Copy Code</button>
+    </div>
+    
+    <div class="snippet-box">
+      <h2>Table</h2>
+      <iframe src="snippets/table.html"></iframe>
+      <pre>&lt;!-- Example snippet: Simple Table --&gt;
+&lt;table border=&quot;1&quot; cellspacing=&quot;0&quot; cellpadding=&quot;8&quot; style=&quot;border-collapse:collapse; width:100%;&quot;&gt;
+  &lt;tr style=&quot;background:#f2f2f2;&quot;&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Email&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;john@example.com&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;alice@example.com&lt;/td&gt;
+    &lt;td&gt;28&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+      <button class="copy" onclick="copyCode(this)">Copy Code</button>
+    </div>
+    
+<script>
+function copyCode(btn) {
+  let code = btn.previousElementSibling.innerText;
+  navigator.clipboard.writeText(code);
+  btn.innerText = "Copied!";
+  setTimeout(()=> btn.innerText = "Copy Code", 1500);
+}
+</script>
+</body>
+</html>
